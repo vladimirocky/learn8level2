@@ -58,6 +58,41 @@ function Matrix (){
     }
 }
 
+
+/**
+ * Какая-нибудь функция
+ * @param число
+ * @returns {count} сколько делятся на 3 и больше 0
+ */
+function doSomething (par){
+    let count = 0;
+    for (let i=1; i < par; i++) {
+        if (i % 3 == 0) count++;
+        console.log(i);
+    }
+    return count;
+}
+
+function runDoSomething () {
+// переменная в которой будем засекать время выполнения
+    let diff = 0;
+    let start = Date.now(); // фиксируем текущее время
+    /**
+     * Выполнение функции в конструкции try catch finally
+     */
+    try {
+        result = doSomething(22); // пробуем запустить
+    } catch (e) {
+        result = 0; // если ошибка - результат пуст
+    } finally {
+        diff = Date.now() - start; // в любом случае замеряем время
+    }
+// выводим результат
+    console.log('Результат - ' + result || 'Возникла ошибка!');
+// выводим время
+    console.log(`Это заняло ${diff} миллисекунд`);
+}
+
 // создадим объект типа Matrix
 let randMass = new Matrix();
 // посмотрим что получилось
@@ -74,3 +109,5 @@ console.log(randMass.name);
 console.log(randMass.calcAvg());
 console.log(randMass.getRow());
 console.log(randMass.getColumn());
+
+runDoSomething();

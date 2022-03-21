@@ -72,3 +72,5 @@ window.onload = function () {
     listOfComments = new CommentsList();
     updateListComms ();
 }
+
+
