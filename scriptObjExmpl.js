@@ -60,6 +60,7 @@ function Matrix (){
 
 
 /**
+ * Тестируем try catch
  * Какая-нибудь функция
  * @param число
  * @returns {count} сколько делятся на 3 и больше 0
