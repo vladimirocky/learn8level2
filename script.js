@@ -62,7 +62,6 @@ function addComment (){
     // содаем обект
     let commElem = new Comment(name,comm);
     listOfComments.pushComm(commElem);
-
     // элемент html который буде обновлять
     let allist = document.getElementById('commentsList');
 
@@ -115,5 +114,3 @@ window.onload = function () {
     // обновим
     updateListComms ();
 }
-
-

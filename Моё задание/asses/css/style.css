@@ -5,7 +5,7 @@
 	font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
-p {
+#IconText {
 	text-align: center;
 	font-size: 36px;
 	color: red;
@@ -18,7 +18,6 @@ p {
 	min-width: 100%;
 	display: flex;
 	align-items: center;
-	position: fixed;
 }
 
 .main__container {
@@ -50,6 +49,144 @@ a{
 }
 
 .block1 {
+	padding-top: 84px;
 	min-height: 401px;
 	background: url(../img/blog-top.jpg);
+	display: flex;
+	align-items: center;
+}
+
+#TextBlock1 {
+	color:darkslategrey;
+	font-size: 36px;
+	text-align: center;
+}
+
+#ColorTimur {
+	color:aquamarine;
+}
+
+.block2 {
+	min-height: 701px;
+	background: #262626;
+}
+
+#Zagolovok {
+	color: rgb(115, 249, 18);
+	text-align: center;
+	padding-top: 60px;
+}
+
+hr {
+	margin-top: 50px;
+	margin-left: 590px;
+	width: 150px;
+    height: 1px;
+    background:rgb(216, 36, 36);
+	margin-bottom: 50px;
+}
+
+.BlockContant {
+	display: flex;
+}
+
+.BlockContant__cart {
+	width: 33.333%;
+	text-align: center;
+	color: 	#D2B48C;
+	font-weight: bold;
+}
+
+.CartImg {
+	padding: 30px 0 0 0;
+}
+
+.BlockCart__text {
+	color: rgb(167, 100, 100);
+	padding-top: 40px;
+	font-size: 18px;
+}
+
+.block3__slider {
+	background-color: #6c6565;
+}
+
+.container {
+	padding-top: 1px;
+}
+
+.slider {
+	width: 800px;
+	height: 550px;
+	border: 2px solid black;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.slider-line {
+	height: 500px;
+	width: 1500px;
+	display: flex;
+	position: relative;
+	left: 0;
+	transition: all ease 1s;
+}
+
+.btn {
+	font-size: 50px;
+	color: rgb(230, 236, 54);
+	margin-left: 10px;
+}
+
+.BtnCenter {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+#SliderZagolovok {
+	padding: 20px 0 20px 0;
+	text-align: center;
+	color:cornflowerblue;
+}
+
+.Opisanie {
+	text-align: center;
+	color: rgb(5, 251, 99);
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+#counterSlider {
+	color: rgb(5, 251, 99);
+	font-size: 30px;
+}
+
+.blockInteraktiv__Ul {
+	min-height: 500px;
+	background-color: #262626;
+}
+
+#ZagolovokInteraktiv {
+	font-size: 40px;
+	padding-top: 20px;
+	font-family: "Bookman Old Style";
+	text-align: center;
+	color: white;
+}
+
+input, textarea {
+    background: #313131;
+    color: azure;
+    border-color: #11999e;
+    text-align: center;
+}
+
+h4 {
+	color: white;
+}
+
+.btn-danger {
+	font-size: 20px;
+	color: white;
 }

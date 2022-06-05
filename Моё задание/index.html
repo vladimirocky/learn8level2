@@ -5,6 +5,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src = "asses/js/script.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="asses/css/style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,13 +18,13 @@
 		<div class = "navigation__container">
 			<div class = "icon__container">
 				<img height="60px" src="asses/img/icon.png">
-				<p>Страница о себе</p>
+				<p id = "IconText">Страница о себе</p>
 			</div>
 
 			<nav class = "nav__panel">
-				<a href="#">О себе</a>
+				<a href="#Zagolovok">О себе</a>
+				<a href="#slider">Слайдер</a>
 				<a href="#">Анимация</a>
-				<a href="#">Слайдер</a>
 				<a href="#">Интерактивный список</a>
 			</nav>
 		</div>
@@ -34,7 +35,90 @@
 
 <section class = "block1">
 	<div class = "main__container">
-		
+		<p id = "TextBlock1">Привет, мир! Меня зовут <span id = "ColorTimur">Тимур.</span></p>
+	</div>
+</section>
+
+<section class = "block2">
+	<div class="main__container">
+		<h2 id = "Zagolovok">Обо мне</h2>
+
+		<hr>
+
+		<div class = "BlockContant">
+			<div class="BlockContant__cart">
+				<h2>Немного о себе</h2>
+				<img class = "CartImg" src="asses/img/me1.png">
+				<p class = "BlockCart__text">Доброго времени суток,меня зовут Тимур
+					Я занимаюсь web-разработкой с нуля.
+					Люблю вёрстку и программирование,а так же доработку,добавляя полный функционал на сайт!Верстаю адаптивную верстку с помощью Bootstrap,
+					таким образом сайт получается красивым на любом устройстве,будь то комьютер,ноутбук или телефон!
+			    </p>
+			</div>
+
+			<div class="BlockContant__cart">
+				<h2>Знания и умения</h2>
+				<img class = "CartImg" src="asses/img/me2.png">
+				<p class = "BlockCart__text">
+					Знаю такие языки программирования,как:JavaScript.Языки разметки: HTML(5), таблицы стилей CSS(3).
+					Учусь верстать адаптивные сайты под планшеты и мобильные устройства, фраемворк Bootstrap!
+			    </p>
+			</div>
+
+			<div class="BlockContant__cart">
+				<h2>Самообразование</h2>
+				<img class = "CartImg" src="asses/img/me3.png">
+				<p class = "BlockCart__text">Курсы в интернете, видеокурсы, книги, документация, форумы, статьи...
+			    </p>
+			</div>	
+		</div>
+	</div>
+</section>
+
+<section id = "slider" class = "block3__slider">
+	<div class="main__container">
+		<h1 id = "SliderZagolovok">Слайдер</h1>
+	</div>
+		<div class = "container">
+			<div class = "slider">
+				<div class = "slider-line">
+					<img width = "800px" height = "550px" src="asses/img/slider/ГорыТаркиjpg.jpg" alt="">
+					<img width = "800px" height="550px" src="asses/img/slider/Гора Базардюзюjpg.jpg" alt="">
+					<img width = "800px" height = "550px" src="asses/img/slider/caption.jpg" alt="">
+				</div>
+			</div>
+			<div class = "Opisanie">
+				<span id = "TextImg">Горы Тарки</span><br><span id = "counterSlider"> 1/3</span>
+			</div>
+			<div class = "BtnCenter">
+				<div>
+					<button type="butto	n" class="slider-prev btn btn-secondary">Назад</button>
+				</div>
+				<div>
+					<button type="button" class="slider-next btn btn-secondary">Вперёд</button>
+				</div>
+			</div>
+		</div>
+</section>
+
+<section class="blockInteraktiv__Ul">
+	<div class = "main__container">
+		<h2 id = "ZagolovokInteraktiv">Оставьте комментарий</h2>
+		<hr>
+		<p>
+			<label><h4>Ваше имя пользователя:</h4></label>
+			<input id="userName" type = "text"><br>
+		</p>
+		<p>
+			<label><h4>Комментарий:</h4></label>
+			<textarea id="text_comment" style='width: 100%; max-width: 100%;'></textarea>
+		</p>
+
+		<p>
+			<button onclick="btnComment()" type="button" class="btn btn-danger">Добавить комментарий</button>
+		</p>
+
+		<div id = "CommentContainer"></div>
 	</div>
 </section>
 
